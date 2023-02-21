@@ -2,13 +2,17 @@
   "name": "vanilla-js-starter",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://griffin94.github.io/Simplified-order-summary",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.58.0",
     "vite": "^4.1.0"
   }
