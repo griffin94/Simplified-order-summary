@@ -1,5 +1,6 @@
-@use "./abstracts" as a;
-@use "./components";
+@use './abstracts' as a;
+@use './components';
+@use './pages';
 
 * {
   margin: 0;
@@ -9,6 +10,5 @@
 }
 
 body {
-  min-height: 100vh;
   background-color: a.$background;
 }

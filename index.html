@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <div id="home-page">
+    <div id="home-page" class="home-page">
       <div class="card">
         <picture>
           <source media="(min-width: 1440px)" srcset="./public/images/hero-desktop.png" />
@@ -29,6 +29,16 @@
           <p class="card__description">
             You're close! Confirm your purchase and complete your order in the next step
           </p>
+
+          <div class="music card__music">
+            <img class="music__image" src="./public/images/music.svg" alt="music" />
+            <div class="music__info-container">
+              <span class="music__author">Annual Plan</span>
+              <span class="music__price">$58.99 / year</span>
+            </div>
+            <a class="music__link link link--primary" href="#">Change</a>
+          </div>
+
           <button class="button">Proceed to Payment</button>
           <a class="card__link link" href="#">Cancel Order</a>
         </div>

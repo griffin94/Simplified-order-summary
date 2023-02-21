@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 16px 24px;
+    padding: 40px 16px 28px;
     text-align: center;
   }
 
@@ -33,6 +33,10 @@
     margin: 16px 0 32px;
   }
 
+  &__music {
+    margin-bottom: 32px;
+  }
+
   &__link {
     margin-top: 20px;
   }
@@ -47,7 +51,6 @@
     }
 
     &__heading {
-      font-weight: 700;
       font-size: 32px;
       line-height: 44px;
     }

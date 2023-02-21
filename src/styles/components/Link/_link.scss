@@ -6,9 +6,25 @@
   font-size: 14px;
   line-height: 160%;
   letter-spacing: -0.01em;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(100% - 4px);
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: a.$title;
+  }
 
   &--primary {
     color: a.$primary;
+
+    &::after {
+      background-color: a.$primary;
+    }
   }
 }
 

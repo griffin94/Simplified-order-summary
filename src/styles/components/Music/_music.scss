@@ -1,0 +1,67 @@
+@use '../../abstracts' as a;
+
+.music {
+  height: 75px;
+  padding: 0 24px 0 20px;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  background-color: a.$background;
+  border-radius: a.$rounding;
+
+  &__image {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-left: 24px;
+    border-left: 1px solid a.$stroke;
+    text-align: left;
+  }
+
+  &__author {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: a.$title;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    color: a.$body;
+    margin-top: 2px;
+  }
+
+  &__link {
+    margin-left: auto;
+  }
+}
+
+
+@media (min-width: a.$desktop) {
+  .music {
+    height: 83px;
+    padding: 0 32px;
+
+    &__info-container {
+      margin-left: 32px;
+      padding-left: 32px;
+    }
+
+    &__author {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &__price {
+      font-size: 14px;
+    }
+  }
+}
