@@ -15,7 +15,24 @@
 
   <body>
     <div id="home-page">
-      <button class="button">Proceed to Payment</button>
+      <div class="card">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./public/images/hero-desktop.png" />
+          <img
+            class="card__image"
+            src="./public/images/hero-mobile.png"
+            alt="girl with headphones"
+          />
+        </picture>
+        <div class="card__content">
+          <h2 class="card__heading">Order Summary</h2>
+          <p class="card__description">
+            You're close! Confirm your purchase and complete your order in the next step
+          </p>
+          <button class="button">Proceed to Payment</button>
+          <a class="card__link link" href="#">Cancel Order</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
