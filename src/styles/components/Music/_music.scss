@@ -9,12 +9,12 @@
   background-color: a.$background;
   border-radius: a.$rounding;
 
-  &__image {
+  & &__image {
     width: 24px;
     height: 24px;
   }
 
-  &__info-container {
+  & &__info-container {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -23,14 +23,14 @@
     text-align: left;
   }
 
-  &__author {
+  & &__author {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     color: a.$title;
   }
 
-  &__price {
+  & &__price {
     font-weight: 500;
     font-size: 12px;
     line-height: 160%;
@@ -39,7 +39,7 @@
     margin-top: 2px;
   }
 
-  &__link {
+  & &__link {
     margin-left: auto;
   }
 }
@@ -50,17 +50,17 @@
     height: 83px;
     padding: 0 32px;
 
-    &__info-container {
+    & &__info-container {
       margin-left: 32px;
       padding-left: 32px;
     }
 
-    &__author {
+    & &__author {
       font-size: 18px;
       line-height: 25px;
     }
 
-    &__price {
+    & &__price {
       font-size: 14px;
     }
   }
