@@ -1,4 +1,4 @@
-@use "../../abstracts" as a;
+@use '../../abstracts' as a;
 
 .button {
   width: 100%;
@@ -10,14 +10,15 @@
   border: 1px solid a.$primary;
   border-radius: a.$rounding;
   background-color: a.$primary;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 
   color: a.$white;
   font-size: 16px;
   font-weight: 700;
   line-height: 160%;
   letter-spacing: -0.01em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
 
   &:hover {
     background-color: a.$primary-hover;
