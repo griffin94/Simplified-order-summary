@@ -1,4 +1,4 @@
-@use '../../abstracts' as a;
+@use '../../styles/abstracts/' as a;
 
 .button {
   width: 100%;
@@ -23,5 +23,14 @@
   &:hover {
     background-color: a.$primary-hover;
     border-color: a.$primary-hover;
+  }
+
+  & &__loader {
+    display: none;
+  }
+  
+  &#{&}--loading &__loader {
+    display: block;
+    margin-left: 24px;
   }
 }
