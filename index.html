@@ -11,7 +11,8 @@
     />
     
     <title>Simplified order summary</title>
-    <link rel="stylesheet" href="/Simplified-order-summary/assets/index-b96581cc.css">
+    <script type="module" crossorigin src="/Simplified-order-summary/assets/index-25c2bac8.js"></script>
+    <link rel="stylesheet" href="/Simplified-order-summary/assets/index-aa37f08b.css">
   </head>
 
   <body>
@@ -40,10 +41,15 @@
             <a class="music__link link link--primary" href="#">Change</a>
           </div>
 
-          <button class="button">Proceed to Payment</button>
+          <button class="button" id="proceed-to-payment-button">
+            Proceed to Payment
+            <span class="loader button__loader"></span>
+          </button>
           <a class="card__link link" href="#">Cancel Order</a>
         </div>
       </div>
     </div>
+
+    
   </body>
 </html>
